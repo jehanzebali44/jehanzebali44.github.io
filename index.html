@@ -4,363 +4,223 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jehanzeb Ali | Senior Android Developer</title>
-  <meta name="description" content="Portfolio of Jehanzeb Ali, Senior Android Developer specializing in Kotlin, Jetpack Compose, MVVM, Clean Architecture, Firebase, REST APIs, and scalable Android applications." />
+  <meta name="description" content="Jehanzeb Ali portfolio - Senior Android Developer specializing in Kotlin, Jetpack Compose, MVVM, Clean Architecture, Firebase, REST APIs and production Android apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#" class="brand">
-        <span class="brand-logo">JA</span>
-        <span>
-          <strong>Jehanzeb Ali</strong>
-          <small>Senior Android Developer</small>
-        </span>
+  <header class="topbar" id="topbar">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Jehanzeb Ali home">
+        <span class="brand-mark">JA</span>
+        <span class="brand-text"><strong>Jehanzeb Ali</strong><small>Senior Android Developer</small></span>
       </a>
-
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
       </div>
-
-      <a href="#contact" class="nav-btn">Hire Me</a>
+      <a class="nav-cta" href="#contact">Hire Me</a>
     </nav>
   </header>
 
   <main>
+    <section class="hero section-pad" id="home">
+      <div class="grid-bg"></div>
+      <div class="blob blob-one"></div><div class="blob blob-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-media reveal clean-hero-media">
+          <div class="clean-brand-stage" aria-label="Jehanzeb Ali Android developer brand">
+            <div class="stage-ring ring-one"></div>
+            <div class="stage-ring ring-two"></div>
 
-    <section id="home" class="hero-section">
-      <div class="hero-bg"></div>
+            <div class="clean-ja-mark">
+              <svg viewBox="0 0 180 180" role="img" aria-label="JA logo">
+                <defs>
+                  <linearGradient id="jaGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#26c6ff"/>
+                    <stop offset="52%" stop-color="#4f8cff"/>
+                    <stop offset="100%" stop-color="#9d5cff"/>
+                  </linearGradient>
+                </defs>
+                <rect x="16" y="16" width="148" height="148" rx="42" fill="url(#jaGradient)"/>
+                <path d="M62 54v58c0 18-10 28-28 28-7 0-13-1-19-4l7-22c3 1 7 2 10 2 7 0 10-4 10-12V54h20z" fill="white" opacity=".96"/>
+                <path d="M104 54h22l39 86h-25l-7-17H96l-7 17H65l39-86zm21 49-10-26-10 26h20z" fill="white" opacity=".96"/>
+              </svg>
+            </div>
 
-      <div class="hero-content">
-        <span class="status-badge">
-          <span></span> Available for Android Projects
-        </span>
-
-        <h1>Hi, I’m <span>Jehanzeb Ali</span></h1>
-
-        <h2>Senior Android Developer</h2>
-
-        <p>
-          I build scalable, high-performance Android applications using Kotlin,
-          Jetpack Compose, MVVM, Clean Architecture, Firebase, REST APIs, and
-          modern Android development practices.
-        </p>
-
-        <div class="hero-tags">
-          <span>Kotlin</span>
-          <span>Jetpack Compose</span>
-          <span>MVVM</span>
-          <span>Clean Architecture</span>
-          <span>Firebase</span>
+            <div class="tech-pill pill-android"><span>●</span> Android</div>
+            <div class="tech-pill pill-kotlin"><span>●</span> Kotlin</div>
+            <div class="tech-pill pill-compose"><span>●</span> Compose</div>
+            <div class="tech-pill pill-firebase"><span>●</span> Firebase</div>
+          </div>
         </div>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary-btn">View Projects</a>
-          <a href="#contact" class="btn outline-btn">Contact Me</a>
-        </div>
-
-        <div class="social-row">
-          <span>Follow Me</span>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="GitHub">GH</a>
-          <a href="mailto:jehanzebali44@gmail.com" aria-label="Email">@</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="orbit-card android-card">🤖</div>
-        <div class="orbit-card kotlin-card">K</div>
-        <div class="profile-card">
-          <div class="profile-avatar">JA</div>
-          <h3>5+ Years Experience</h3>
-          <p>Android Apps • AI Tools • Media Apps • Utility Apps</p>
-        </div>
-        <div class="floating-card">
-          <strong>20+</strong>
-          <span>Projects Completed</span>
+        <div class="hero-copy reveal delay-1">
+          <span class="status"><i></i> Available for Android Projects</span>
+          <h1>Hi, I’m <span>Jehanzeb Ali</span></h1>
+          <h2 class="typing-line">Senior <span id="typingText">Android Developer</span></h2>
+          <p>I build scalable, high-performance Android applications using Kotlin, Jetpack Compose, MVVM, Clean Architecture, Firebase, REST APIs, and modern Android development practices.</p>
+          <div class="chips"><span>Kotlin</span><span>Jetpack Compose</span><span>MVVM</span><span>Clean Architecture</span><span>Firebase</span></div>
+          <div class="actions"><a class="btn primary" href="#projects">View My Work <b>→</b></a><a class="btn secondary" href="https://docs.google.com/document/d/1YgHw8E4gNYMGieilzKHJFb9BxOcKcRMFHlDv7a0cPAs/edit?usp=sharing" target="_blank" rel="noopener">Download CV</a></div>
+          <div class="socials"><span>Follow Me</span><a href="http://linkedin.com/in/jehanzeb-ali-73933b1b3" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/jehanzebali44" target="_blank" rel="noopener">GitHub</a></div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about-section">
-      <div class="section-heading">
-        <span>About Me</span>
-        <h2>Android Developer focused on scalable mobile products</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="glass-card about-text">
-          <h3>Who I Am</h3>
-          <p>
-            I’m a Senior Android Developer with 5+ years of experience building
-            scalable and high-performance Android applications. I specialize in
-            Kotlin, Jetpack Compose, MVVM, Clean Architecture, Firebase, REST APIs,
-            performance optimization, and production-grade mobile solutions.
-          </p>
-          <p>
-            I have experience leading development teams, mentoring developers,
-            architecting apps, debugging complex issues, and delivering user-focused
-            products across media, productivity, utility, and AI-based categories.
-          </p>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-card">
-            <h3>5+</h3>
-            <p>Years Experience</p>
-          </div>
-          <div class="stat-card">
-            <h3>20+</h3>
-            <p>Projects Completed</p>
-          </div>
-          <div class="stat-card">
-            <h3>4+</h3>
-            <p>Companies Worked With</p>
-          </div>
-          <div class="stat-card">
-            <h3>10+</h3>
-            <p>Apps Experience</p>
-          </div>
-        </div>
+    <section class="section container" id="about">
+      <div class="section-title reveal"><span>About Me</span><h2>Android developer focused on scalable mobile products</h2></div>
+      <div class="about-layout">
+        <article class="panel reveal"><h3>Who I Am</h3><p>I’m a Senior Android Developer with 5+ years of experience building scalable and high-performance Android apps. I specialize in Kotlin, Jetpack Compose, MVVM, Clean Architecture, Firebase, REST APIs, performance optimization, and production-grade mobile solutions.</p><p>I have worked across media, productivity, utility, and AI-based products while leading teams, mentoring developers, reviewing code, debugging complex issues, and delivering user-focused features.</p></article>
+        <div class="stats reveal delay-1"><div><strong>5+</strong><span>Years Experience</span></div><div><strong>20+</strong><span>Projects Completed</span></div><div><strong>4+</strong><span>Companies</span></div><div><strong>20+</strong><span>Apps Experience</span></div></div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <span>Experience</span>
-        <h2>Professional Journey</h2>
-      </div>
-
+    <section class="section container" id="experience">
+      <div class="section-title reveal"><span>Experience</span><h2>Professional journey</h2></div>
       <div class="timeline">
-        <div class="timeline-card">
-          <span>Sep 2025 - Present</span>
-          <h3>FanawarIt Pvt Ltd</h3>
-          <h4>Sr. Android Developer</h4>
-          <p>Develop scalable Android applications using Kotlin, Jetpack Compose, MVVM, and Clean Architecture.</p>
-        </div>
-
-        <div class="timeline-card">
-          <span>Jul 2023 - Aug 2025</span>
-          <h3>CodeHawk Technologies</h3>
-          <h4>Sr. Android Developer / Team Lead</h4>
-          <p>Led Android development, mentored junior developers, and worked with Firebase, REST APIs, Room, and modern Android practices.</p>
-        </div>
-
-        <div class="timeline-card">
-          <span>Jul 2021 - Jul 2023</span>
-          <h3>Raccoon Tech</h3>
-          <h4>Sr. Android Developer / Team Lead</h4>
-          <p>Managed project planning, code reviews, debugging, UI implementation, and team coordination.</p>
-        </div>
-
-        <div class="timeline-card">
-          <span>Jan 2021 - Jul 2021</span>
-          <h3>AJK Technologies</h3>
-          <h4>Android Developer Intern</h4>
-          <p>Assisted in Android development, UI implementation, API integration, debugging, and core Android practices.</p>
-        </div>
+        <article class="timeline-item reveal"><small>Sep 2025 — Present</small><h3>FanawarIt Pvt Ltd</h3><h4>Sr. Android Developer</h4><p>Develop scalable Android applications using Kotlin, Jetpack Compose, MVVM, and Clean Architecture.</p></article>
+        <article class="timeline-item reveal"><small>Jul 2023 — Aug 2025</small><h3>CodeHawk Technologies</h3><h4>Sr. Android Developer / Team Lead</h4><p>Led Android development, mentored junior developers, and built apps with Firebase, REST APIs, Room, and modern Android practices.</p></article>
+        <article class="timeline-item reveal"><small>Jul 2021 — Jul 2023</small><h3>Raccoon Tech</h3><h4>Sr. Android Developer / Team Lead</h4><p>Managed project planning, code reviews, debugging, UI implementation, and team coordination.</p></article>
+        <article class="timeline-item reveal"><small>Jan 2021 — Jul 2021</small><h3>AJK Technologies</h3><h4>Android Developer Intern</h4><p>Assisted in Android application development, UI implementation, API integration, and debugging.</p></article>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="section-heading">
-        <span>Skills</span>
-        <h2>Technologies I Work With</h2>
-      </div>
-
-      <div class="skills-container">
-        <span>Kotlin</span>
-        <span>Java</span>
-        <span>Jetpack Compose</span>
-        <span>XML Layouts</span>
-        <span>MVVM</span>
-        <span>Clean Architecture</span>
-        <span>Room Database</span>
-        <span>Retrofit</span>
-        <span>OkHttp</span>
-        <span>REST APIs</span>
-        <span>Firebase</span>
-        <span>Coroutines</span>
-        <span>Flow</span>
-        <span>Hilt</span>
-        <span>Koin</span>
-        <span>AdMob</span>
-        <span>GitHub</span>
-        <span>Play Console</span>
-        <span>Postman</span>
-        <span>Material Design</span>
-      </div>
+    <section class="section container" id="skills">
+      <div class="section-title reveal"><span>Skills</span><h2>Technologies I work with</h2></div>
+      <div class="skill-cloud reveal"><span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>XML Layouts</span><span>MVVM</span><span>Clean Architecture</span><span>Room</span><span>Retrofit</span><span>OkHttp</span><span>REST APIs</span><span>Firebase</span><span>Coroutines</span><span>Flow</span><span>Hilt</span><span>Koin</span><span>AdMob</span><span>AdMob Mediation</span><span>Ads Integration</span><span>Play Console</span><span>GitHub</span><span>Postman</span><span>Material Design</span></div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="section-heading">
+    <section class="section container" id="projects">
+      <div class="section-title reveal">
         <span>Projects</span>
-        <h2>Featured Android Projects</h2>
+        <h2>Featured Android projects</h2>
+        <p class="section-subtitle">A product-style showcase of Android apps built across productivity, media, utility, security, and personalization categories.</p>
       </div>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-icon">🌍</div>
-          <h3>Screen Translator</h3>
-          <p>Real-time on-screen translation with text, voice, camera, PDF, and image translation across multiple languages.</p>
-          <div>
-            <span>Translation</span>
-            <span>AI Tool</span>
+      <div class="project-filters reveal" aria-label="Project filters">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="productivity">Productivity</button>
+        <button class="filter-btn" type="button" data-filter="media">Media</button>
+        <button class="filter-btn" type="button" data-filter="utility">Utility</button>
+        <button class="filter-btn" type="button" data-filter="security">Security</button>
+      </div>
+
+      <div class="play-project-grid">
+        <article class="play-project-card reveal" data-category="productivity">
+          <div class="project-preview gradient-blue">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>🌍</span><b>Translator</b><small>Text • Voice • Camera</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">🌍</span><div><h3>Screen Translator</h3><p>Real-time translation with text, voice, camera, PDF, and image translation across multiple languages.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>OCR</span><span>MVVM</span><span>Firebase</span></div><div class="project-meta">Productivity • Translation • Android</div>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-icon">📺</div>
-          <h3>Screen Mirroring</h3>
-          <p>Cast phone screen, photos, videos, and audio to Smart TVs and streaming devices.</p>
-          <div>
-            <span>Media</span>
-            <span>Casting</span>
+        <article class="play-project-card reveal" data-category="media">
+          <div class="project-preview gradient-purple">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>📺</span><b>Cast Screen</b><small>Phone to Smart TV</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">📺</span><div><h3>Screen Mirroring</h3><p>Cast phone screen, photos, videos, and audio to Smart TVs and streaming devices.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Media</span><span>DLNA</span><span>Smart TV</span></div><div class="project-meta">Media • Casting • Android</div>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-icon">🔐</div>
-          <h3>Gallery Vault</h3>
-          <p>Photo manager with vault, editor, cleaner tools, and private media management features.</p>
-          <div>
-            <span>Utility</span>
-            <span>Security</span>
+        <article class="play-project-card reveal" data-category="security utility">
+          <div class="project-preview gradient-green">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>🔐</span><b>Gallery Vault</b><small>Hide • Clean • Edit</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">🔐</span><div><h3>Gallery Vault</h3><p>Photo manager with vault, editor, cleaner tools, and private media features.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Room</span><span>MediaStore</span><span>Security</span></div><div class="project-meta">Security • Gallery • Utility</div>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-icon">⬇️</div>
-          <h3>Video Downloader</h3>
-          <p>Fast and reliable downloader for saving videos from popular social media platforms.</p>
-          <div>
-            <span>Media</span>
-            <span>Downloader</span>
+        <article class="play-project-card reveal" data-category="media utility">
+          <div class="project-preview gradient-orange">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>⬇️</span><b>Downloader</b><small>Social Video Saver</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">⬇️</span><div><h3>Video Downloader</h3><p>Fast and reliable downloader for saving videos from popular social media platforms.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Retrofit</span><span>Coroutines</span><span>Ads</span></div><div class="project-meta">Media • Downloader • Android</div>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-icon">🎵</div>
-          <h3>Video / Audio Player</h3>
-          <p>All-format media player with HD playback, subtitles, playlists, and background play support.</p>
-          <div>
-            <span>Media3</span>
-            <span>Player</span>
+        <article class="play-project-card reveal" data-category="media">
+          <div class="project-preview gradient-pink">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>▶️</span><b>HD Player</b><small>Subtitles • Playlist</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">▶️</span><div><h3>Video / Audio Player</h3><p>All-format media player with HD playback, subtitles, playlists, and background play support.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Media3</span><span>Room</span><span>Service</span></div><div class="project-meta">Media • Player • Android</div>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-icon">⚡</div>
-          <h3>Internet Speed Tester</h3>
-          <p>Accurate network speed testing app to measure download and upload speed.</p>
-          <div>
-            <span>Network</span>
-            <span>Utility</span>
+        <article class="play-project-card reveal" data-category="utility">
+          <div class="project-preview gradient-cyan">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>⚡</span><b>Speed Test</b><small>Download • Upload</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">⚡</span><div><h3>Internet Speed Tester</h3><p>Accurate network speed testing app to measure download and upload speed.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Networking</span><span>Charts</span><span>Utility</span></div><div class="project-meta">Utility • Network • Android</div>
+          </div>
+        </article>
+
+        <article class="play-project-card reveal" data-category="productivity utility">
+          <div class="project-preview gradient-violet">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>⌨️</span><b>Keyboard</b><small>Languages • Themes</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">⌨️</span><div><h3>Keyboard Multilingual</h3><p>Custom multilingual keyboard with themes, typing tools, smart input features, and modern monetization flows.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>IME</span><span>Themes</span><span>Voice Typing</span></div><div class="project-meta">Productivity • Keyboard • Android</div>
+          </div>
+        </article>
+
+        <article class="play-project-card reveal" data-category="security">
+          <div class="project-preview gradient-royal">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>🔒</span><b>Screen Lock</b><small>PIN • Pattern • Fingerprint</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">🔒</span><div><h3>Screen Locker</h3><p>Lock screen app with PIN, pattern, zipper style lock, fingerprint support, themes, and customization options.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Security</span><span>Biometric</span><span>UI</span></div><div class="project-meta">Security • Lock Screen • Android</div>
+          </div>
+        </article>
+
+        <article class="play-project-card reveal" data-category="utility productivity">
+          <div class="project-preview gradient-slate">
+            <div class="phone-mockup"><div class="phone-top"></div><div class="app-screen"><span>▣</span><b>QR Scanner</b><small>Scan • Create • History</small></div></div>
+          </div>
+          <div class="project-body">
+            <div class="project-head"><span class="app-icon">▣</span><div><h3>QR Code Scanner</h3><p>Fast QR and barcode scanner with real-time scanning, QR creation, barcode generation, and history management.</p></div></div>
+            <div class="tech-stack"><span>Kotlin</span><span>Camera</span><span>Barcode</span><span>Generator</span></div><div class="project-meta">Utility • QR & Barcode • Android</div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="services" class="section">
-      <div class="section-heading">
-        <span>Services</span>
-        <h2>What I Can Do</h2>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Android App Development</h3>
-          <p>Custom Android apps using Kotlin, Jetpack Compose, XML, and modern Android tools.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>UI/UX Implementation</h3>
-          <p>Clean, responsive, and user-friendly mobile interfaces using Material Design.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>API Integration</h3>
-          <p>REST API integration using Retrofit, OkHttp, JSON parsing, and clean data layers.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Firebase Solutions</h3>
-          <p>Firebase Auth, Firestore, FCM, Analytics, Crashlytics, and app event tracking.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Performance Optimization</h3>
-          <p>Improve speed, stability, memory usage, ANR rate, and app performance.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>App Publishing</h3>
-          <p>Play Store setup, release management, app optimization, and deployment support.</p>
-        </div>
-      </div>
+    <section class="section container" id="services">
+      <div class="section-title reveal"><span>Services</span><h2>What I can do</h2></div>
+      <div class="services-grid"><article class="service reveal"><h3>Android App Development</h3><p>Custom Android apps using Kotlin/Java, Jetpack Compose, XML, and modern Android tools.</p></article><article class="service reveal"><h3>UI/UX Implementation</h3><p>Clean, responsive, and user-friendly mobile interfaces using Material Design.</p></article><article class="service reveal"><h3>API Integration</h3><p>REST API integration with Retrofit, OkHttp, JSON parsing, and clean data layers.</p></article><article class="service reveal"><h3>Firebase Solutions</h3><p>Firebase Auth, Firestore, FCM, Analytics, Crashlytics, and app events.</p></article><article class="service reveal"><h3>Ads Integration</h3><p>Complete mobile ads integration, mediation setup, ad placement strategy, and monetization optimization for Android apps.</p></article><article class="service reveal"><h3>App Publishing</h3><p>Play Store setup, release management, optimization, and deployment support.</p></article></div>
     </section>
 
-    <section class="section testimonial-section">
-      <div class="section-heading">
-        <span>Testimonials</span>
-        <h2>Client Feedback</h2>
-      </div>
-
-      <div class="glass-card testimonial-card">
-        <p>
-          “Jehanzeb is a highly skilled Android developer. He delivers clean,
-          scalable, and reliable mobile applications with strong attention to detail.”
-        </p>
-        <h4>— Client Feedback</h4>
-      </div>
+    <section class="section container" id="contact">
+      <div class="section-title reveal"><span>Contact</span><h2>Let’s build something great</h2></div>
+      <div class="contact-grid"><div class="panel contact-info reveal"><h3>Get In Touch</h3><p><b>Phone:</b> +923185283835</p><p><b>Email:</b> <a href="mailto:jehanzebali44@gmail.com">jehanzebali44@gmail.com</a></p><p><b>Location:</b> Rawalpindi, Pakistan</p><p><b>Availability:</b> Open to new opportunities</p></div><form class="contact-form reveal delay-1" id="contactForm"><input id="contactName" type="text" placeholder="Your Name" required><input id="contactEmail" type="email" placeholder="Your Email" required><input id="contactSubject" type="text" placeholder="Subject" required><textarea id="contactMessage" placeholder="Write your message..." required></textarea><button type="submit">Send Message</button></form></div>
     </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="section-heading">
-        <span>Contact</span>
-        <h2>Let’s Build Something Great</h2>
-      </div>
-
-      <div class="contact-grid">
-        <div class="glass-card contact-info">
-          <h3>Get In Touch</h3>
-          <p><strong>Phone:</strong> +923185283835</p>
-          <p><strong>Email:</strong> jehanzebali44@gmail.com</p>
-          <p><strong>Location:</strong> Rawalpindi, Pakistan</p>
-          <p><strong>Availability:</strong> Open to new opportunities</p>
-        </div>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Write your message..."></textarea>
-          <button type="button">Send Message</button>
-        </form>
-      </div>
-    </section>
-
   </main>
 
   <footer class="footer">
-    <div class="brand">
-      <span class="brand-logo">JA</span>
-      <span>
-        <strong>Jehanzeb Ali</strong>
-        <small>Senior Android Developer</small>
-      </span>
+    <div class="container footer-inner premium-footer">
+      <a class="brand footer-brand" href="#home" aria-label="Jehanzeb Ali home">
+        <span class="brand-mark">JA</span>
+        <span class="brand-text"><strong>Jehanzeb Ali</strong><small>Senior Android Developer</small></span>
+      </a>
+      <p>© 2026 Jehanzeb Ali. Built with ❤️ for Android products.</p>
+      <div class="footer-links"><a href="http://linkedin.com/in/jehanzeb-ali-73933b1b3" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/jehanzebali44" target="_blank" rel="noopener">GitHub</a><a href="mailto:jehanzebali44@gmail.com">Email</a></div>
     </div>
-
-    <p>© 2026 Jehanzeb Ali. All rights reserved.</p>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
